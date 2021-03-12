@@ -1,12 +1,9 @@
 package com.lambdaschool.piggybank.models;
-
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "coins")
-public class Coin
-{
+public class Coin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long coinid;
@@ -77,4 +74,3 @@ public class Coin
     }
 }
 
-//(coinid, name, nameplural, value, quantity)
